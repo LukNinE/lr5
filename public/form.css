@@ -1,0 +1,4 @@
+.input-field:has(input:valid) label,
+.input-field:has(input:focus) label {
+    display: none;
+}

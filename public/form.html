@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Додати/Редагувати гру</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body class="container">
+    <h2 id="form-title">Додати гру</h2>
+    <form id="game-form">
+        <input type="hidden" id="game-id">
+        <div class="input-field">
+            <input type="text" id="name" required>
+            <label for="name">Назва</label>
+        </div>
+        <div class="input-field">
+            <input type="number" id="minPlayers" required>
+            <label for="minPlayers">Мін. гравців</label>
+        </div>
+        <div class="input-field">
+            <input type="number" id="maxPlayers" required>
+            <label for="maxPlayers">Макс. гравців</label>
+        </div>
+        <div class="input-field">
+            <input type="number" id="playTime" required>
+            <label for="playTime">Час гри (хв)</label>
+        </div>
+        <button type="submit" class="btn">Зберегти</button>
+        <a href="index.html" class="btn grey">Назад</a>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
